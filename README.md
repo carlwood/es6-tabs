@@ -10,7 +10,6 @@ This plugin toggles the aria-selected state of your tabs, shows the correct tab 
 
 Install with NPM:
 ```
-# NPM
 npm install graphite-tabs --save
 ```
 
@@ -18,11 +17,21 @@ npm install graphite-tabs --save
 
 
 ### HTML
-Ensure the tab button `aria-controls` point to the correct `tab-pane` ID.
+#### Tab links
+* Set up your tab links as buttons
+* On each button, use an `aria-selected="false"` attribute
+* Ensure one tab button is selcted by default using `aria-selected="true"`
+* Ensure each tab button `aria-controls` points to the correct `tab-pane` ID.
+
 ```
 <button role="tab" class="tabs__button" id="tab1-tab" data-toggle="tab" aria-controls="tab1" aria-selected="true">Tab 1</button>
 <button role="tab" class="tabs__button" id="tab2-tab" data-toggle="tab" aria-controls="tab2" aria-selected="false">Tab 2</button>
+```
 
+#### Tab panes
+* Ensure each tab pane has an `id` that matches the tab button `aria-controls` attribute. This is how the plugin shows/hide tabs.
+* Each tab pane should have an `aria-labelledby` attribute that matches its corresponding tab button `id`
+```
 <div class="tab-content">
     <div class="tab-pane is-active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
         <p>Hi, I'm tab 1!</p>
@@ -46,6 +55,7 @@ Call the tabs. The constructor takes two arguments:
 * Selector for tab buttons (STRING)
 * Optional config (OBJECT)
 
+e.g.
 ```
 const tabs = new Tabs('[data-toggle="tab"]', {
     tabPanes: '.tab-pane',
