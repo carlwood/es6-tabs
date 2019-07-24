@@ -1,11 +1,11 @@
 /*!
- * GraphiteTabs.js v1.0.9
+ * GraphiteTabs.js v1.0.11
  * https://github.com/carlwood/es6-tabs
  *
  * Copyright 2019-present Carl Wood
  * Released under the ISC license
  *
- * Date: 2019-07-24T15:26:55.323Z
+ * Date: 2019-07-24T15:45:04.296Z
  */
 
 (function (global, factory) {
