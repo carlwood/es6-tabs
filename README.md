@@ -1,6 +1,7 @@
 # Graphite tabs
 
 **IN DEVELOPMENT.**
+**USE WITH CAUTION!**
 
 Simple vanilla ES6 JavaScript implementation of tabs.
 
@@ -21,7 +22,7 @@ npm install graphite-tabs --save
 * Set up your tab links as buttons
 * On each button, use an `aria-selected="false"` attribute
 * Ensure one tab button is selcted by default using `aria-selected="true"`
-* Ensure each tab button `aria-controls` points to the correct `tab-pane` ID.
+* Ensure each tab button `aria-controls` points to the correct tab-pane `id`.
 
 ```
 <button role="tab" class="tabs__button" id="tab1-tab" data-toggle="tab" aria-controls="tab1" aria-selected="true">Tab 1</button>

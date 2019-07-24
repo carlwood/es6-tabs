@@ -13,6 +13,13 @@
     "watch": "rollup -c -m -w"
   },
   "author": "Carl Wood",
+  "keywords": [
+    "es6",
+    "vanilla",
+    "javascript",
+    "js",
+    "tabs"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.3.4",
