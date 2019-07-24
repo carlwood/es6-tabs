@@ -1,7 +1,7 @@
 {
   "name": "graphite-tabs",
   "description": "Simple ES6 JS tabs",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "dist/graphite-tabs.common.js",
   "module": "dist/graphite-tabs.esm.js",
   "browser": "dist/graphite-tabs.js",

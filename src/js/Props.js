@@ -1,4 +1,4 @@
 export const DefaultProps = {
-    activeClass: 'is-active',
-    tabPanes: '.tab-pane'
+    tabPanes: '.tab-pane',
+    activeTabPaneClass: 'is-active',
 }

@@ -3,10 +3,8 @@
  */
 export function validateOptions(options, defaultProps) {
     Object.keys(options).forEach(option => {
-        if (!hasOwnProperty(defaultProps, option)) {
+        if (!defaultProps.hasOwnProperty(option)) {
             throw new Error(`[graphite-tabs]: \`${option}\` is not a valid option`)
-        } else {
-            console.log(`all good with ${option}`)
         }
     })
 }
