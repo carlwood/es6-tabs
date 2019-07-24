@@ -5,7 +5,7 @@
   "main": "dist/graphite-tabs.common.js",
   "module": "dist/graphite-tabs.esm.js",
   "browser": "dist/graphite-tabs.js",
-  "url": "",
+  "homepage": "https://github.com/carlwood/es6-tabs",
   "scripts": {
     "build": "rollup -c",
     "start": "npm-run-all --parallel watch",
