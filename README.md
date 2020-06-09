@@ -97,6 +97,12 @@ Style active tab buttons using aria-selected boolean:
         color: white;
     }
 }
+
+.tab-pane {
+    &:not(.is-active) {
+        display: none;
+    }
+}
 ```
 
 ## Browser Support
