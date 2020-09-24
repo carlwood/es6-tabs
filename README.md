@@ -21,7 +21,7 @@ npm install graphite-tabs --save
 #### Tab links
 * Set up your tab links as buttons
 * On each button, use an `aria-selected="false"` attribute
-* Ensure one tab button is selcted by default using `aria-selected="true"`
+* Ensure one tab button is selected by default using `aria-selected="true"`
 * Ensure each tab button `aria-controls` points to the correct tab-pane `id`.
 
 ```
